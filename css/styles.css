@@ -11351,3 +11351,37 @@ section#contact form#contactForm :-ms-input-placeholder {
   #mainNav .brand-logo{ height:55px; }
   #mainNav .navbar-brand{ margin-left:0; }
 }
+/* ===== ZIPF LOGO NAVBAR ===== */
+.zipf-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* weiter links */
+  margin-left: -60px;        /* Feintuning nach links */
+}
+
+.zipf-brand img {
+  height: 90px;              /* LOGO GRÖSSE */
+  width: auto;
+}
+
+.zipf-brand span {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 991px) {
+  .zipf-brand {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .zipf-brand img {
+    height: 65px;
+  }
+}
+
