@@ -11403,4 +11403,9 @@ img, video {
     padding: 1rem;
   }
 }
+/* Navbar Logo größer */
+.navbar-brand img {
+  height: 70px;      /* HIER größer/kleiner machen */
+  width: auto;
+}
 
