@@ -11384,4 +11384,23 @@ section#contact form#contactForm :-ms-input-placeholder {
     height: 65px;
   }
 }
+/* === Mobile Basis === */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 
