@@ -11408,4 +11408,36 @@ img, video {
   height: 70px;      /* HIER größer/kleiner machen */
   width: auto;
 }
+/* ===== Logo / Navbar Brand ===== */
+
+.zipf-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.zipf-brand img {
+  height: 48px;        /* Desktop-Logogröße */
+  width: auto;
+  max-height: none;
+}
+
+.zipf-brand span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* ===== Mobile Anpassung ===== */
+@media (max-width: 768px) {
+  .zipf-brand img {
+    height: 34px;
+  }
+
+  .zipf-brand span {
+    font-size: 0.9rem;
+  }
+}
+
 
