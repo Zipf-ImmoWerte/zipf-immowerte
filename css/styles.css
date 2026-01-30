@@ -11439,5 +11439,19 @@ img, video {
     font-size: 0.9rem;
   }
 }
+/* ZIPF Brand Logo – force override */
+.navbar .navbar-brand.zipf-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.navbar .navbar-brand.zipf-brand img {
+  height: 48px !important;   /* <-- HIER ändern */
+  width: auto !important;
+  max-height: none !important;
+  display: block !important;
+}
+
 
 
