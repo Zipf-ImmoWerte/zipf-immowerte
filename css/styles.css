@@ -11322,7 +11322,7 @@ nav.navbar a.navbar-brand.zipf-brand {
 }
 
 nav.navbar a.navbar-brand.zipf-brand img {
-  height: 48px !important;   /* <-- HIER Größe ändern */
+  height: 480px !important;   /* <-- HIER Größe ändern */
   width: auto !important;
   max-height: none !important;
   display: block !important;
