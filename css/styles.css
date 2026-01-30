@@ -11314,144 +11314,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-/* Brand: Logo oben, Name darunter */
-#mainNav .brand-wrap{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start; /* links */
-  gap:6px;
-  text-decoration:none;
-}
-
-#mainNav .brand-logo{
-  height:70px;   /* Größe anpassen */
-  width:auto;
-  display:block;
-}
-
-#mainNav .brand-name{
-  color:#fff;
-  font-weight:700;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  font-size:0.95rem;
-  line-height:1;
-}
-
-/* etwas weiter nach links (ohne kaputtes margin-left: -250px) */
-#mainNav .container{
-  max-width: 1320px; /* Standard Bootstrap */
-}
-#mainNav .navbar-brand{
-  margin-left: -20px; /* leicht nach links */
-}
-
-/* Mobile */
-@media (max-width: 991px){
-  #mainNav .brand-logo{ height:55px; }
-  #mainNav .navbar-brand{ margin-left:0; }
-}
-/* ===== ZIPF LOGO NAVBAR ===== */
-.zipf-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;   /* weiter links */
-  margin-left: -60px;        /* Feintuning nach links */
-}
-
-.zipf-brand img {
-  height: 90px;              /* LOGO GRÖSSE */
-  width: auto;
-}
-
-.zipf-brand span {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-/* Mobile Optimierung */
-@media (max-width: 991px) {
-  .zipf-brand {
-    margin-left: 0;
-    align-items: center;
-  }
-
-  .zipf-brand img {
-    height: 65px;
-  }
-}
-/* === Mobile Basis === */
-* {
-  box-sizing: border-box;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-/* Navbar Logo größer */
-.navbar-brand img {
-  height: 70px;      /* HIER größer/kleiner machen */
-  width: auto;
-}
-/* ===== Logo / Navbar Brand ===== */
-
-.zipf-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-.zipf-brand img {
-  height: 48px;        /* Desktop-Logogröße */
-  width: auto;
-  max-height: none;
-}
-
-.zipf-brand span {
-  font-weight: 700;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-/* ===== Mobile Anpassung ===== */
-@media (max-width: 768px) {
-  .zipf-brand img {
-    height: 34px;
-  }
-
-  .zipf-brand span {
-    font-size: 0.9rem;
-  }
-}
-/* ZIPF Brand Logo – force override */
-.navbar .navbar-brand.zipf-brand {
+/* ===== ZIPF Navbar Brand (final & override-sicher) ===== */
+nav.navbar a.navbar-brand.zipf-brand {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
 }
 
-.navbar .navbar-brand.zipf-brand img {
-  height: 48px !important;   /* <-- HIER ändern */
+nav.navbar a.navbar-brand.zipf-brand img {
+  height: 48px !important;   /* <-- HIER Größe ändern */
   width: auto !important;
   max-height: none !important;
   display: block !important;
 }
-
-
-
