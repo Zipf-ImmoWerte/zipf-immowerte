@@ -11356,4 +11356,12 @@ nav.navbar a.navbar-brand.zipf-brand img {
   --brand-black-2: #1A1A1A;
   --brand-white: #ffffff;
 }
+/* ===== HERO HEADLINE – Gold & Weiß auf schwarzem Hintergrund ===== */
+header.masthead .headline-left {
+  color: var(--brand-gold) !important;
+}
+
+header.masthead .headline-right {
+  color: var(--brand-white) !important;
+}
 
