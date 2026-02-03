@@ -59,19 +59,13 @@
 }
 
 body {
-  margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: color: #0F6F73;
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  h1, h2, h3, h4, h5, h6 {
-  color: #0F6F73;
+  color: var(--bs-body-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-heading-color);
+}
+
 
 }
 
@@ -11333,5 +11327,39 @@ nav.navbar a.navbar-brand.zipf-brand img {
   .headline-right {
     font-size: 16px;
   }
+}
+@media (max-width: 768px) {
+  .masthead-text-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headline-left {
+    font-size: 18px;
+  }
+
+  .headline-right {
+    font-size: 16px;
+  }
+}
+/* =========================
+   ZIPF IMMOWERTE – BUTTONS
+   ========================= */
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-primary-dark);
+  border-color: var(--brand-primary-dark);
+  color: var(--text-light);
+}
+:root {
+  --brand-primary: #0F6F73;
+  --brand-primary-dark: #0B5F63;
+  --text-light: #ffffff;
 }
 
