@@ -19,7 +19,7 @@
   --brand-gold: #C9A24D;
   --brand-gold-dark: #B08C3E;
 
-  --brand-gold: #C9A24D;
+  --brand-black: #111111;
   --brand-black-soft: #1A1A1A;
   --brand-white: #ffffff;
 
@@ -36,9 +36,9 @@
   --bs-link-color: var(--brand-gold);
   --bs-link-hover-color: var(--brand-gold-dark);
 
-  --bs-body-color: var(--brand-black);
-  --bs-heading-color: var(--brand-black);
-
+  /* WICHTIG */
+  --bs-body-color: var(--brand-black-soft);
+  --bs-heading-color: inherit;
 }
 
 
