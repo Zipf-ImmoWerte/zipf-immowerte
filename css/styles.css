@@ -13,37 +13,34 @@
 :root {
 
   /* =========================
-     ZIPF IMMOWERTE – FARBEN
+     ZIPF – BRAND COLORS
      ========================= */
 
-  /* Hauptfarbe aus dem Logo */
-  --brand-primary: #0F6F73;
-  --brand-primary-dark: #0B5F63;
-  --brand-primary-light: #1A7F83;
+  --brand-gold: #C9A24D;
+  --brand-gold-dark: #B08C3E;
 
-  /* Textfarben */
-  --text-main: #0F6F73;
-  --text-dark: #2e2e2e;
-  --text-light: #ffffff;
+  --brand-black: #111111;
+  --brand-black-soft: #1A1A1A;
+  --brand-white: #ffffff;
 
   /* =========================
      BOOTSTRAP OVERRIDES
      ========================= */
 
-  --bs-primary: var(--brand-primary);
-  --bs-warning: var(--brand-primary);
+  --bs-primary: var(--brand-gold);
+  --bs-warning: var(--brand-gold);
 
-  --bs-primary-rgb: 15, 111, 115;
-  --bs-warning-rgb: 15, 111, 115;
+  --bs-primary-rgb: 201, 162, 77;
+  --bs-warning-rgb: 201, 162, 77;
 
-  --bs-link-color: var(--brand-primary);
-  --bs-link-hover-color: var(--brand-primary-dark);
+  --bs-link-color: var(--brand-gold);
+  --bs-link-hover-color: var(--brand-gold-dark);
 
-  --bs-body-color: var(--text-dark);
-  --bs-heading-color: var(--brand-primary);
+  --bs-body-color: var(--brand-black);
+  --bs-heading-color: var(--brand-black);
 
-  --bs-btn-color: var(--text-light);
 }
+
 
 
 *,
@@ -57,14 +54,15 @@
     scroll-behavior: smooth;
   }
 }
-
 body {
   color: var(--bs-body-color);
+  background-color: var(--brand-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--bs-heading-color);
 }
+
 
 
 }
@@ -11304,14 +11302,13 @@ nav.navbar a.navbar-brand.zipf-brand img {
 .headline-left {
   font-size: 22px;
   font-weight: 600;
-  color: #c9a24d;         /* z. B. Gold */
+  color: var(--brand-gold);   /* GOLD */
   text-transform: uppercase;
 }
 
-/* rechter Text */
 .headline-right {
   font-size: 18px;
-  color: #ffffff;         /* Weiß */
+  color: var(--brand-white);  /* WEISS */
   max-width: 700px;
 }
 @media (max-width: 768px) {
