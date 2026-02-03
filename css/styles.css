@@ -11367,3 +11367,9 @@ header.masthead .headline-right {
 header.masthead .masthead-heading {
   color: #C9A24D !important;
 }
+header.masthead .masthead-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
