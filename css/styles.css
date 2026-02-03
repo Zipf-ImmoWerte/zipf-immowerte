@@ -11324,12 +11324,6 @@ nav.navbar a.navbar-brand.zipf-brand img {
   .headline-right {
     font-size: 16px;
   }
-}
-@media (max-width: 768px) {
-  .masthead-text-row {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .headline-left {
     font-size: 18px;
@@ -11344,19 +11338,22 @@ nav.navbar a.navbar-brand.zipf-brand img {
    ========================= */
 
 .btn-primary {
-  background-color: var(--brand-primary);
-  border-color: var(--brand-primary);
-  color: var(--text-light);
+  background-color: var(--brand-gold);
+  border-color: var(--brand-gold);
+  color: var(--brand-black);
 }
 
 .btn-primary:hover {
-  background-color: var(--brand-primary-dark);
-  border-color: var(--brand-primary-dark);
-  color: var(--text-light);
+  background-color: var(--brand-gold-dark);
+  border-color: var(--brand-gold-dark);
+  color: var(--brand-black);
 }
 :root {
-  --brand-primary: #0F6F73;
-  --brand-primary-dark: #0B5F63;
-  --text-light: #ffffff;
+  --brand-gold: #C9A24D;
+  --brand-gold-dark: #B08C3E;
+
+  --brand-black: #111111;
+  --brand-black-2: #1A1A1A;
+  --brand-white: #ffffff;
 }
 
