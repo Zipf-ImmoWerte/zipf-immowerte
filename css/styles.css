@@ -11364,4 +11364,6 @@ header.masthead .headline-left {
 header.masthead .headline-right {
   color: var(--brand-white) !important;
 }
-
+header.masthead .masthead-heading {
+  color: #C9A24D !important;
+}
