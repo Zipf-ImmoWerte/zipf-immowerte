@@ -11327,3 +11327,26 @@ nav.navbar a.navbar-brand.zipf-brand img {
   max-height: none !important;
   display: block !important;
 }
+.masthead-text-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;              /* Abstand zwischen den Texten */
+  justify-content: center;
+  flex-wrap: wrap;        /* wichtig für Mobile */
+}
+
+/* linker Text */
+.headline-left {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c9a24d;         /* z. B. Gold */
+  text-transform: uppercase;
+}
+
+/* rechter Text */
+.headline-right {
+  font-size: 18px;
+  color: #ffffff;         /* Weiß */
+  max-width: 700px;
+}
+
