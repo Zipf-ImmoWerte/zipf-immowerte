@@ -11473,3 +11473,68 @@ header.masthead .btn-primary {
     max-width: 320px;
   }
 }
+/* =========================
+   MOBILE FIX (iPhone/Android)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Navbar kompakter */
+  #mainNav,
+  #mainNav.navbar-shrink {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+  }
+
+  #mainNav .navbar-brand img,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 36px !important;
+    width: auto !important;
+  }
+
+  /* Hero: weniger hoch + besserer Fokus */
+  header.masthead {
+    min-height: 100vh;                 /* sauber auf Handy */
+    padding: 5.2rem 0.8rem 1.5rem;     /* oben Platz für Navbar */
+    background-position: center center;
+    background-size: cover;            /* verhindert weiße Ränder */
+  }
+
+  /* Textbox: kleiner & nicht so wuchtig */
+  header.masthead .masthead-content {
+    padding: 1.1rem 1rem;
+    border-radius: 14px;
+    gap: 0.9rem;
+    background: rgba(0,0,0,0.60);      /* weniger “grau”, mehr Bild */
+  }
+
+  /* Subheading: wieder sichtbar und nicht abgeschnitten */
+  header.masthead .masthead-subheading {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  /* Headline: kleiner, damit weniger gequetscht */
+  header.masthead .masthead-heading {
+    font-size: 1.8rem;
+    line-height: 1.12;
+    max-width: 22ch;
+    margin: 0;
+  }
+
+  /* Zusatztext: kürzer/lesbarer */
+  header.masthead .masthead-text {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    max-width: 30ch;
+    margin: 0;
+  }
+
+  /* Button: nicht mehr riesig */
+  header.masthead .btn-primary {
+    padding: 0.75rem 1.1rem !important;
+    max-width: 260px;
+    width: 100%;
+  }
+}
+
