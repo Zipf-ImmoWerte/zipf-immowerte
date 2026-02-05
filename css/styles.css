@@ -11777,4 +11777,13 @@ header.masthead .masthead-heading {
     display: block !important;
   }
 }
+/* Mobile: kein Zoom im Hero */
+@media (max-width: 768px) {
+  header.masthead {
+    background-size: contain !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
 
