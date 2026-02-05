@@ -11286,7 +11286,7 @@ nav.navbar a.navbar-brand.zipf-brand {
 }
 
 nav.navbar a.navbar-brand.zipf-brand img {
-  height: 64px !important;
+  height: 85px !important;
   width: auto !important;
   display: block !important;
 }
@@ -11294,9 +11294,10 @@ nav.navbar a.navbar-brand.zipf-brand img {
 /* Mobile */
 @media (max-width: 768px) {
   nav.navbar a.navbar-brand.zipf-brand img {
-    height: 44px !important;
+    height: 60px !important;
   }
 }
+
 
 .masthead-text-row {
   display: flex;
