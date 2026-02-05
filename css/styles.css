@@ -11373,16 +11373,21 @@ header.masthead .masthead-heading {
    HERO / TITELBILD
    ========================= */
 header.masthead {
-  height: 85vh;
-  min-height: 650px;
+  min-height: 520px;
+  height: min(85vh, 760px);
+  padding-top: 6rem;   /* Platz für fixed Navbar */
+  padding-bottom: 4rem;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 @media (max-width: 768px) {
   header.masthead {
-    height: 60vh;
-    min-height: 420px;
+    min-height: 440px;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
   }
 }
 
