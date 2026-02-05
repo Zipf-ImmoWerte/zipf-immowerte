@@ -11723,13 +11723,11 @@ header.masthead .masthead-heading {
    NAVBAR: Logo größer, aber Bar bleibt sauber
    ========================= */
 
-/* Navbar-Höhe fixieren */
 #mainNav {
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
+  padding-top: 0.12rem !important;
+  padding-bottom: 0.12rem !important;
 }
 
-/* Brand-Container sauber ausrichten */
 #mainNav .navbar-brand.zipf-brand {
   display: flex !important;
   align-items: center !important;
@@ -11738,10 +11736,9 @@ header.masthead .masthead-heading {
   line-height: 1 !important;
 }
 
-/* Logo größer */
-/* Logo größer */
+/* Logo Desktop */
 #mainNav .navbar-brand.zipf-brand img {
-  height: 120px !important;     /* Desktop Größe */
+  height: 120px !important;
   width: auto !important;
   display: block !important;
 }
@@ -11749,12 +11746,12 @@ header.masthead .masthead-heading {
 /* Mobile */
 @media (max-width: 768px) {
   #mainNav {
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important;
+    padding-top: 0.08rem !important;
+    padding-bottom: 0.08rem !important;
   }
 
   #mainNav .navbar-brand.zipf-brand img {
-    height: 90px !important;   /* Mobile Größe */
+    height: 90px !important;
     width: auto !important;
     display: block !important;
   }
