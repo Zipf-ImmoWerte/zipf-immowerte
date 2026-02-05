@@ -11364,76 +11364,29 @@ nav.navbar a.navbar-brand.zipf-brand img {
   --brand-black-2: #1A1A1A;
   --brand-white: #ffffff;
 }
-/* ===== HERO HEADLINE – Gold & Weiß auf schwarzem Hintergrund ===== */
-header.masthead .headline-left {
-  color: var(--brand-gold) !important;
-}
-
-header.masthead .headline-right {
-  color: var(--brand-white) !important;
-}
-header.masthead .masthead-heading {
-  color: #C9A24D !important;
-}
-header.masthead .masthead-heading {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-
-  font-size: 3rem;        /* vorher war es deutlich größer */
-  line-height: 1.15;
-}
-/* =========================
-   HERO / TITELBILD
-   ========================= */
-header.masthead {
-  min-height: 480px;
-  height: min(70vh, 640px);
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #000;
-}
-
-@media (max-width: 768px) {
-  header.masthead {
-    min-height: 420px;
-    height: 60vh;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-
-    background-size: contain;
-    background-position: center top;
-  }
-}
-
-/* ===== HERO TEXT: nur halbe Breite (Desktop) ===== */
-/* =========================
-   HERO – SPLIT LAYOUT (FINAL)
-   ========================= */
+/* =========================================================
+   HERO / MASTHEAD – FINAL, SAUBER, MIT WENIGER ZEILENUMBRÜCHEN
+   ========================================================= */
 
 header.masthead {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* links Text, rechts Bild */
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  min-height: 85vh;
+  padding: 8rem 2vw 4rem;
 
   background-color: #000;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
-  min-height: 85vh;
-  padding-right: 2vw;
 }
 
-/* Textbereich links */
+/* Textbox links */
 header.masthead .masthead-content {
-  max-width: 620px;
+  max-width: 900px;          /* WICHTIG: erlaubt lange Zeilen */
   margin-left: 22%;
-  padding: 2.5rem 2.2rem;
-  margin-top: -2rem;
+  padding: 2.6rem 2.4rem;
 
   display: flex;
   flex-direction: column;
@@ -11447,47 +11400,76 @@ header.masthead .masthead-content {
   border-radius: 16px;
 }
 
-/* Typografie */
+/* Subheading */
 header.masthead .masthead-subheading {
-  font-size: 0.95rem;
-  letter-spacing: 0.12em;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
   opacity: 0.9;
-  opacity: 0.8;
-font-size: 0.9rem;
 }
 
+/* Headline – weniger Zeilen */
 header.masthead .masthead-heading {
-max-width: 38ch;
+  color: #C9A24D;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 3rem;
   line-height: 1.15;
+  max-width: 52ch;           /* <-- weniger Umbrüche */
 }
 
-/* Mobile: untereinander */
-@media (max-width: 768px) {
-  header.masthead {
-    grid-template-columns: 1fr;
-    background-position: center bottom;
-  }
-
-  header.masthead .masthead-content {
-    margin: 0 1rem;
-    max-width: none;
-    text-align: center;
-    align-items: center;
-  }
+/* Zusatztext unter Headline */
+header.masthead .masthead-text {
+  color: #e6e6e6;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 62ch;           /* <-- läuft länger */
 }
-/* ===== HERO BUTTON FEINSCHLIFF ===== */
+
+/* Button */
 header.masthead .masthead-button {
-  margin-top: 0.4rem;   /* Button näher an Text */
+  margin-top: 0.6rem;
 }
 
 header.masthead .btn-primary {
   padding: 0.9rem 1.6rem;
   border-radius: 12px;
 }
-header.masthead .masthead-text {
-  color: #e6e6e6;
-  font-size: 1.05rem;
-  max-width: 34ch;
-  line-height: 1.5;
-}
 
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  header.masthead {
+    grid-template-columns: 1fr;
+    min-height: 80vh;
+    padding: 6rem 1rem 2.5rem;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  header.masthead .masthead-content {
+    margin: 0;
+    max-width: 100%;
+    padding: 1.6rem 1.4rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  header.masthead .masthead-subheading {
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 2.1rem;
+    max-width: 28ch;
+  }
+
+  header.masthead .masthead-text {
+    font-size: 1rem;
+    max-width: 34ch;
+  }
+
+  header.masthead .btn-primary {
+    width: 100%;
+    max-width: 320px;
+  }
+}
