@@ -11700,10 +11700,14 @@ header.masthead .masthead-heading {
    MOBILE HERO – Premium Glass Overlay
    ========================= */
 @media (max-width: 768px) {
+
   header.masthead .masthead-content {
-    background: rgba(0, 0, 0, 0.35) !important; /* viel edler als grau */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0,0,0,0.25) !important; /* transparenter */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    border: 1px solid rgba(255,255,255,0.12); /* edler Glas-Rand */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 
     border-radius: 18px;
     padding: 2rem 1.5rem;
@@ -11718,7 +11722,9 @@ header.masthead .masthead-heading {
   header.masthead .masthead-text {
     text-shadow: 0 2px 10px rgba(0,0,0,0.7);
   }
+
 }
+
 /* =========================
    NAVBAR FINAL – Logo groß, Navbar schmal (Desktop + Mobile)
    ========================= */
