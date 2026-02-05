@@ -11383,12 +11383,13 @@ header.masthead .masthead-heading {
 header.masthead {
   min-height: 520px;
   height: min(85vh, 760px);
-  padding-top: 6rem;   /* Platz für fixed Navbar */
+  padding-top: 6rem;
   padding-bottom: 4rem;
 
-  background-size: cover;
-  background-position: 85% 15%;
+  background-size: contain;
+  background-position: right bottom;
   background-repeat: no-repeat;
+  background-color: #000;
 }
 
 @media (max-width: 768px) {
