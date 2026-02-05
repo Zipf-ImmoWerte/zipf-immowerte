@@ -11404,22 +11404,33 @@ header.masthead {
   }
 }
 
-
+/* ===== HERO TEXT: nur halbe Breite (Desktop) ===== */
 header.masthead {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.masthead-content {
-  max-width: 50%;
+header.masthead .masthead-content {
+  width: min(50%, 720px);     /* <- halbe Seite, aber max 720px */
+  margin-left: 6%;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-align: left;
 }
 
+header.masthead .masthead-heading {
+  max-width: 100%;
+  white-space: normal;        /* wichtig: sicher umbrechen */
+}
+
+/* Mobile: volle Breite + zentriert */
 @media (max-width: 768px) {
-  .masthead-content {
-    max-width: 100%;
+  header.masthead .masthead-content {
+    width: 100%;
+    margin-left: 0;
     text-align: center;
+    align-items: center;
   }
 }
