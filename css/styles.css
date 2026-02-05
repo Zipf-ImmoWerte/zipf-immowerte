@@ -11730,4 +11730,42 @@ header.masthead .masthead-heading {
     text-shadow: 0 2px 10px rgba(0,0,0,0.7);
   }
 }
+/* =========================
+   NAVBAR: Logo größer, aber Bar bleibt sauber
+   ========================= */
+
+/* Navbar-Höhe fixieren */
+#mainNav {
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+}
+
+/* Brand-Container sauber ausrichten */
+#mainNav .navbar-brand.zipf-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Logo größer, aber passt in die Bar */
+#mainNav .navbar-brand.zipf-brand img {
+  height: 72px !important;     /* Desktop Größe */
+  width: auto !important;
+  display: block !important;
+}
+
+/* Mobile: Navbar bleibt kompakt */
+@media (max-width: 768px) {
+  #mainNav {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  #mainNav .navbar-brand.zipf-brand img {
+    height: 54px !important;   /* Mobile Größe */
+  }
+}
+
 
