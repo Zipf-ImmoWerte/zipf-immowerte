@@ -11681,5 +11681,28 @@ header.masthead .btn-primary {
   border-color: #C9A24D !important;
   box-shadow: 0 0 0 0.2rem rgba(201,162,77,0.35);
 }
+/* =========================
+   HERO HEADLINE – edler Premium Look
+   ========================= */
+header.masthead .masthead-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;              /* weniger fett = edler */
+  letter-spacing: 0.02em;        /* minimal Abstand */
+  line-height: 1.22;             /* mehr Luft */
+  font-size: 3.2rem;             /* elegante Größe */
+  max-width: 42ch;               /* längere Zeilen, weniger Umbruch */
+  margin: 0 auto;                /* zentriert im Container */
+  text-align: center;
 
+  color: #C9A24D !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.55); /* Premium Glow */
+}
 
+/* Mobile schöner */
+@media (max-width: 768px) {
+  header.masthead .masthead-heading {
+    font-size: 2.2rem;
+    max-width: 20ch;
+    line-height: 1.25;
+  }
+}
