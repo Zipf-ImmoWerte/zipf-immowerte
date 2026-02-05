@@ -11431,6 +11431,7 @@ header.masthead .masthead-content {
   max-width: 620px;
   margin-left: 8%;
   padding: 2.5rem 2.2rem;
+  margin-top: -2rem;
 
   display: flex;
   flex-direction: column;
@@ -11449,11 +11450,12 @@ header.masthead .masthead-subheading {
   font-size: 0.95rem;
   letter-spacing: 0.12em;
   opacity: 0.9;
-  margin-bottom: 0.8rem;
+  opacity: 0.8;
+font-size: 0.9rem;
 }
 
 header.masthead .masthead-heading {
-  max-width: 18ch;
+ max-width: 24ch;
   line-height: 1.15;
 }
 
@@ -11471,3 +11473,13 @@ header.masthead .masthead-heading {
     align-items: center;
   }
 }
+/* ===== HERO BUTTON FEINSCHLIFF ===== */
+header.masthead .masthead-button {
+  margin-top: 0.6rem;   /* Button näher an Text */
+}
+
+header.masthead .btn-primary {
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+}
+
