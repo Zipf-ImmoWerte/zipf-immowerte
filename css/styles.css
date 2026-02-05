@@ -11422,7 +11422,7 @@ header.masthead .masthead-text {
   color: #e6e6e6;
   font-size: 1.35rem;
   line-height: 1.55;
-  max-width: 68ch;           /* <-- läuft länger */
+  max-width: 62ch;           /* <-- läuft länger */
 }
 
 /* Button */
