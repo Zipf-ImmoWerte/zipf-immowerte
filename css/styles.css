@@ -11720,14 +11720,22 @@ header.masthead .masthead-heading {
   }
 }
 /* =========================
-   NAVBAR: Logo größer, aber Bar bleibt sauber
+   NAVBAR FINAL – Logo groß, Navbar schmal (Desktop + Mobile)
    ========================= */
 
 #mainNav {
-  padding-top: 0.12rem !important;
-  padding-bottom: 0.12rem !important;
+  padding-top: 0.04rem !important;
+  padding-bottom: 0.04rem !important;
 }
 
+/* Links kompakter -> Navbar wird deutlich schmaler */
+#mainNav .navbar-nav .nav-link {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  line-height: 1.1 !important;
+}
+
+/* Brand-Container */
 #mainNav .navbar-brand.zipf-brand {
   display: flex !important;
   align-items: center !important;
@@ -11746,8 +11754,14 @@ header.masthead .masthead-heading {
 /* Mobile */
 @media (max-width: 768px) {
   #mainNav {
-    padding-top: 0.08rem !important;
-    padding-bottom: 0.08rem !important;
+    padding-top: 0.02rem !important;
+    padding-bottom: 0.02rem !important;
+  }
+
+  #mainNav .navbar-nav .nav-link {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    line-height: 1.1 !important;
   }
 
   #mainNav .navbar-brand.zipf-brand img {
@@ -11756,4 +11770,3 @@ header.masthead .masthead-heading {
     display: block !important;
   }
 }
-
