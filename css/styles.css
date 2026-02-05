@@ -11394,10 +11394,14 @@ header.masthead {
 
 @media (max-width: 768px) {
   header.masthead {
-    min-height: 440px;
-    padding-top: 7rem;
+    min-height: 420px;
+    height: 60vh;
+    padding-top: 6rem;
     padding-bottom: 3rem;
-    background-position: 80% 10%;
+
+    background-size: contain;
+    background-position: center top;
   }
 }
+
 
