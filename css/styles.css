@@ -11807,9 +11807,11 @@ header.masthead .masthead-heading {
     font-size: 1.4rem !important;
   }
 }
-/* Logo weiter nach links schieben */
-#mainNav .navbar-brand.zipf-brand {
-  margin-left: -25px !important;
+/* Logo nur auf Desktop weiter nach links */
+@media (min-width: 769px) {
+  #mainNav .navbar-brand.zipf-brand {
+    margin-left: -25px !important;
+  }
 }
 
 
