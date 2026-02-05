@@ -11615,5 +11615,29 @@ header.masthead .btn-primary {
   font-style: italic;
   font-weight: 400;
 }
+/* =========================
+   TEAM / ANSPRECHPARTNER – Schrift schwarz & kräftig
+   ========================= */
+#team h2,
+#team h3,
+#team h4,
+#team h5 {
+  color: #000 !important;
+}
 
+#team p,
+#team .text-muted {
+  color: #111 !important;
+  opacity: 1 !important;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Untertitel unter der Überschrift */
+#team .section-subheading {
+  color: #444 !important;
+  font-style: italic;
+  font-weight: 400;
+}
 
