@@ -10933,12 +10933,14 @@ header.masthead .masthead-heading {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
+header.masthead .masthead-subheading {
+  font-size: 1.1rem;          /* deutlich kleiner */
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
@@ -11375,7 +11377,10 @@ header.masthead .masthead-heading {
 header.masthead .masthead-heading {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+
+  font-size: 3rem;        /* vorher war es deutlich größer */
+  line-height: 1.15;
 }
 /* =========================
    HERO / TITELBILD
@@ -11435,3 +11440,14 @@ header.masthead .masthead-heading {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  header.masthead .masthead-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .masthead-subheading {
+    font-size: 0.95rem;
+  }
+}
+
