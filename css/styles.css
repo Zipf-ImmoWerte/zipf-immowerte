@@ -11285,17 +11285,6 @@ nav.navbar a.navbar-brand.zipf-brand {
   gap: 12px !important;
 }
 
-nav.navbar a.navbar-brand.zipf-brand img {
-  height: 85px !important;
-  width: auto !important;
-  display: block !important;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  nav.navbar a.navbar-brand.zipf-brand img {
-    height: 60px !important;
-  }
 }
 
 
