@@ -11785,5 +11785,28 @@ header.masthead .masthead-heading {
     background-repeat: no-repeat !important;
   }
 }
+/* =========================
+   NAVBAR BRAND TEXT (ZIPF IMMOWERTE)
+   - keine Großbuchstaben mehr
+   - Premium Schrift
+   - Farbe anpassbar
+   ========================= */
+
+#mainNav .navbar-brand {
+  font-family: "Playfair Display", serif !important;
+  text-transform: none !important;        /* entfernt uppercase */
+  color: #C9A24D !important;
+  font-size: 1.9rem !important;          /* Schriftgröße */
+  font-weight: 600 !important;           /* edel kräftig */
+  letter-spacing: 0.03em !important;     /* Premium Abstand */
+}
+
+/* Mobile etwas kleiner */
+@media (max-width: 768px) {
+  #mainNav .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+}
+
 
 
