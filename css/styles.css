@@ -11430,7 +11430,7 @@ header.masthead {
 /* Textbereich links */
 header.masthead .masthead-content {
   max-width: 620px;
-  margin-left: 12%;
+  margin-left: 16%;
   padding: 2.5rem 2.2rem;
   margin-top: -2rem;
 
@@ -11456,7 +11456,7 @@ font-size: 0.9rem;
 }
 
 header.masthead .masthead-heading {
-max-width: 24ch;
+max-width: 30ch;
   line-height: 1.15;
 }
 
