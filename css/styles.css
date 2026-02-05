@@ -11760,19 +11760,21 @@ header.masthead .masthead-heading {
 /* Mobile */
 @media (max-width: 768px) {
   #mainNav {
-    padding-top: 0.02rem !important;
-    padding-bottom: 0.02rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
   }
 
   #mainNav .navbar-nav .nav-link {
     padding-top: 0.2rem !important;
     padding-bottom: 0.2rem !important;
     line-height: 1.1 !important;
+    font-size: 0.9rem;
   }
 
   #mainNav .navbar-brand.zipf-brand img {
-    height: 90px !important;
+    height: 55px !important;
     width: auto !important;
     display: block !important;
   }
 }
+
