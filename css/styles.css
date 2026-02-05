@@ -11410,44 +11410,64 @@ header.masthead {
 }
 
 /* ===== HERO TEXT: nur halbe Breite (Desktop) ===== */
+/* =========================
+   HERO – SPLIT LAYOUT (FINAL)
+   ========================= */
+
 header.masthead {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* links Text, rechts Bild */
   align-items: center;
-  justify-content: flex-start;
+
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  min-height: 85vh;
 }
 
+/* Textbereich links */
 header.masthead .masthead-content {
-  width: 50%;
-  max-width: 980px;
-  margin-left: 6%;
+  max-width: 620px;
+  margin-left: 8%;
+  padding: 2.5rem 2.2rem;
+
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  text-align: left;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.55)
+  );
+  border-radius: 16px;
+}
+
+/* Typografie */
+header.masthead .masthead-subheading {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+  margin-bottom: 0.8rem;
 }
 
 header.masthead .masthead-heading {
-  max-width: 100%;
-  white-space: normal;        /* wichtig: sicher umbrechen */
+  max-width: 18ch;
+  line-height: 1.15;
 }
 
-/* Mobile: volle Breite + zentriert */
+/* Mobile: untereinander */
 @media (max-width: 768px) {
+  header.masthead {
+    grid-template-columns: 1fr;
+    background-position: center bottom;
+  }
+
   header.masthead .masthead-content {
-    width: 100%;
-    margin-left: 0;
+    margin: 0 1rem;
+    max-width: none;
     text-align: center;
     align-items: center;
   }
 }
-@media (max-width: 768px) {
-  header.masthead .masthead-heading {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .masthead-subheading {
-    font-size: 0.95rem;
-  }
-}
-
