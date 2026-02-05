@@ -11420,9 +11420,9 @@ header.masthead .masthead-heading {
 /* Zusatztext unter Headline */
 header.masthead .masthead-text {
   color: #e6e6e6;
-  font-size: 1.45rem;
-  line-height: 1.55;
-  max-width: 70ch;           /* <-- läuft länger */
+  font-size: 1.35rem;
+  line-height: 1.65;
+  max-width: 62ch;           /* <-- läuft länger */
 }
 
 /* Button */
