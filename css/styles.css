@@ -11680,7 +11680,7 @@ header.masthead .masthead-heading {
   letter-spacing: 0.02em;        /* minimal Abstand */
   line-height: 1.22;             /* mehr Luft */
   font-size: 3.2rem;             /* elegante Größe */
-  max-width: 42ch;               /* längere Zeilen, weniger Umbruch */
+  max-width: 40ch;               /* längere Zeilen, weniger Umbruch */
   margin: 0 auto;                /* zentriert im Container */
   text-align: center;
 
