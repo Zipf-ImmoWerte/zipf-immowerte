@@ -11564,3 +11564,30 @@ header.masthead .btn-primary {
   margin-left: auto;
   margin-right: auto;
 }
+/* =========================
+   PORTFOLIO / SO ARBEITEN WIR – Schrift schwarz & kräftig
+   ========================= */
+#portfolio h2,
+#portfolio h3,
+#portfolio h4,
+#portfolio h5,
+#portfolio h6 {
+  color: #000 !important;
+}
+
+#portfolio p,
+#portfolio .text-muted {
+  color: #111 !important;
+  opacity: 1 !important;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Untertitel kleiner & elegant */
+#portfolio .section-subheading {
+  color: #444 !important;
+  font-weight: 400;
+  font-style: italic;
+}
+
