@@ -11738,14 +11738,14 @@ header.masthead .masthead-heading {
   line-height: 1 !important;
 }
 
-/* Logo größer, aber passt in die Bar */
+/* Logo größer */
 #mainNav .navbar-brand.zipf-brand img {
-  height: 72px !important;     /* Desktop Größe */
+  height: 95px !important;     /* Desktop Größe */
   width: auto !important;
   display: block !important;
 }
 
-/* Mobile: Navbar bleibt kompakt */
+/* Mobile */
 @media (max-width: 768px) {
   #mainNav {
     padding-top: 0.4rem !important;
@@ -11753,8 +11753,6 @@ header.masthead .masthead-heading {
   }
 
   #mainNav .navbar-brand.zipf-brand img {
-    height: 54px !important;   /* Mobile Größe */
+    height: 70px !important;   /* Mobile Größe */
   }
 }
-
-
