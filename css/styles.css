@@ -11372,4 +11372,11 @@ header.masthead .masthead-heading {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+header.masthead {
+  height: 85vh;
+  min-height: 650px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
