@@ -11405,3 +11405,21 @@ header.masthead {
 }
 
 
+header.masthead {
+  display: flex;
+  align-items: center;
+}
+
+.masthead-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .masthead-content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
