@@ -11590,4 +11590,30 @@ header.masthead .btn-primary {
   font-weight: 400;
   font-style: italic;
 }
+/* =========================
+   ABOUT / ÜBER MICH – Schrift schwarz & kräftig
+   ========================= */
+#about h2,
+#about h3,
+#about h4,
+#about h5 {
+  color: #000 !important;
+}
+
+#about p,
+#about .text-muted {
+  color: #111 !important;
+  opacity: 1 !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* Untertitel (die Zeile unter ÜBER MICH) */
+#about .section-subheading {
+  color: #444 !important;
+  font-style: italic;
+  font-weight: 400;
+}
+
 
