@@ -11537,4 +11537,30 @@ header.masthead .btn-primary {
     width: 100%;
   }
 }
+/* =========================
+   SERVICES TEXT: schwarz + kräftiger + besser lesbar
+   ========================= */
+#services {
+  background-color: #fff;
+}
 
+#services h2,
+#services h4 {
+  color: #000 !important;
+}
+
+#services p,
+#services .text-muted {
+  color: #111 !important;     /* kräftiges Schwarz */
+  opacity: 1 !important;
+  font-size: 1.05rem;         /* etwas größer */
+  line-height: 1.8;           /* angenehmer Abstand */
+  font-weight: 500;           /* kräftiger */
+}
+
+/* Optional: Text etwas kompakter (wirkt edler) */
+#services .col-md-4 p {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
