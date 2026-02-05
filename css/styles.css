@@ -11810,7 +11810,7 @@ header.masthead .masthead-heading {
 /* Logo nur auf Desktop weiter nach links */
 @media (min-width: 769px) {
   #mainNav .navbar-brand.zipf-brand {
-    margin-left: -25px !important;
+    margin-left: -45px !important;
   }
 }
 
