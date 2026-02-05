@@ -11640,4 +11640,46 @@ header.masthead .btn-primary {
   font-style: italic;
   font-weight: 400;
 }
+/* =========================
+   CONTACT – Schrift klarer + hochwertiger
+   ========================= */
+#contact .section-heading {
+  color: #fff !important;
+}
+
+#contact .section-subheading {
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+/* Platzhalter Text (Ihr Name, Email etc.) dunkler sichtbar */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #777 !important;
+  font-weight: 600;
+}
+
+/* Eingabetext beim Tippen */
+#contact input,
+#contact textarea {
+  color: #111 !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Rahmen schöner */
+#contact input,
+#contact textarea {
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* Fokus-Effekt (wenn man reinklickt) */
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #C9A24D !important;
+  box-shadow: 0 0 0 0.2rem rgba(201,162,77,0.35);
+}
+
 
