@@ -11387,7 +11387,7 @@ header.masthead {
   padding-bottom: 4rem;
 
   background-size: cover;
-  background-position: center;
+  background-position: 85% 15%;
   background-repeat: no-repeat;
 }
 
@@ -11396,6 +11396,7 @@ header.masthead {
     min-height: 440px;
     padding-top: 7rem;
     padding-bottom: 3rem;
+    background-position: 80% 10%;
   }
 }
 
