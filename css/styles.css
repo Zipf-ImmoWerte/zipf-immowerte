@@ -11431,13 +11431,13 @@ header.masthead {
 /* Textbereich links */
 header.masthead .masthead-content {
   max-width: 620px;
-  margin-left: 16%;
+  margin-left: 22%;
   padding: 2.5rem 2.2rem;
   margin-top: -2rem;
 
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.6rem;
 
   background: linear-gradient(
     90deg,
@@ -11457,7 +11457,7 @@ font-size: 0.9rem;
 }
 
 header.masthead .masthead-heading {
-max-width: 30ch;
+max-width: 38ch;
   line-height: 1.15;
 }
 
@@ -11483,5 +11483,11 @@ header.masthead .masthead-button {
 header.masthead .btn-primary {
   padding: 0.9rem 1.6rem;
   border-radius: 12px;
+}
+header.masthead .masthead-text {
+  color: #e6e6e6;
+  font-size: 1.05rem;
+  max-width: 34ch;
+  line-height: 1.5;
 }
 
