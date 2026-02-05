@@ -11739,8 +11739,9 @@ header.masthead .masthead-heading {
 }
 
 /* Logo größer */
+/* Logo größer */
 #mainNav .navbar-brand.zipf-brand img {
-  height: 95px !important;     /* Desktop Größe */
+  height: 120px !important;     /* Desktop Größe */
   width: auto !important;
   display: block !important;
 }
@@ -11753,6 +11754,9 @@ header.masthead .masthead-heading {
   }
 
   #mainNav .navbar-brand.zipf-brand img {
-    height: 70px !important;   /* Mobile Größe */
+    height: 90px !important;   /* Mobile Größe */
+    width: auto !important;
+    display: block !important;
   }
 }
+
